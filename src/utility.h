@@ -1,5 +1,10 @@
 /* Here are some of the utility template 
-   of C++ that are used quite often in programs */
+   of C++ that are used quite often in programs 
+   * 
+   **/
+/*
+ * Author: Suryansh Kumar
+ * **/
 
 #include <cmath>
 

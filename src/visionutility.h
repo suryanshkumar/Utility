@@ -1,3 +1,7 @@
+/***
+ * Author: Suryansh Kumar
+ * **/
+
 #ifndef VISIONUTILITY_H
 #define VISIONUTILITY_H 
 
@@ -15,6 +19,8 @@ class visionlib{
   
   public:
   
+  void init_variable(string, string, string);
+  
   void init_variable(string, string);
   
   void video2images();
@@ -26,6 +32,12 @@ class visionlib{
   string folder_path;
   
   string file_name;
+  
+  string format; 
+  
+  int FRAME_RATE;
+  
+  
   
 };
 
