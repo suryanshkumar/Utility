@@ -1,5 +1,7 @@
+
 /***
  * Author: Suryansh Kumar
+ * 
  * **/
 
 #include <cmath>
@@ -107,11 +109,17 @@ void visionlib :: images2video()
   {
     count=2;
   }
+  
+  string command = "mkdir " + folder_path + "/video";
+  
+  system(command.c_str());
+  
+  string video_path = folder_path + "/video";
  
   sprintf(fn, "%s/%s", folder_path.c_str(), namelist[0]->d_name);
   img = imread(fn);
   
-  sprintf(fn, "%s/%s.avi", folder_path.c_str(), "video");
+  sprintf(fn, "%s/%s.avi", video_path.c_str(), "video");
   
   //vw.open(fn, CV_FOURCC('P', 'I', 'M', '1'), FRAME_RATE, Size(img.cols, img.rows));
   vw.open(fn, CV_FOURCC('D', 'I', 'V', 'X'), FRAME_RATE, Size(img.cols, img.rows));
